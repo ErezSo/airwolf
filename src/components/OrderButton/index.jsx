@@ -27,7 +27,7 @@ function OrderButton({ containerStyle, reserveItem }) {
   const { buttonBox, orderButton } = styles;
   return (
     <div style={containerStyle}>
-      <div style={buttonBox} onClick={reserveItem}>
+      <div className="reserveButton" style={buttonBox} onClick={reserveItem}>
         <div style={orderButton}>Add to Cart</div>
       </div>
     </div>

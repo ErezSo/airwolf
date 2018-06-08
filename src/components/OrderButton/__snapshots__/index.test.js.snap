@@ -2,7 +2,7 @@
 
 exports[`OrderButton renders correctly 1`] = `
 "<div style={[undefined]}>
-  <div style={{...}} onClick={[undefined]}>
+  <div className=\\"reserveButton\\" style={{...}} onClick={[undefined]}>
     <div style={{...}}>
       Add to Cart
     </div>

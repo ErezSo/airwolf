@@ -23,7 +23,7 @@ function Cart({ counter }) {
   return (
     <div>
       <img src="assets/cart.svg" alt="cart" />
-      {counter > 0 && <span style={counterNum}>{counter}</span>}
+      {counter > 0 && <span className="counter" style={counterNum}>{counter}</span>}
     </div>
   );
 }

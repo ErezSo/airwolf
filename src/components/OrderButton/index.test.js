@@ -16,4 +16,11 @@ describe("OrderButton", () => {
   it("renders correctly", () => {
     expect(wrapper.debug()).toMatchSnapshot();
   });
+
+  it("reacts to clicks", () => {
+    const spyOnReserveItem = jest.fn();
+    const wrapper = shallow(<OrderButton reserveItem={spyOnReserveItem} />);
+    wrapper.find(".reserveButton").simulate("click");
+    expect(spyOnReserveItem.mock.calls.length).toBe(1);
+  });
 });
