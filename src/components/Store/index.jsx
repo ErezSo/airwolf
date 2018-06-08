@@ -27,15 +27,17 @@ const styles = {
   }
 };
 
-const Store = () => {
+function Store({ reserveItem }) {
   const { container, itemsList } = styles;
   return (
     <div style={container}>
       <div style={itemsList}>
-        {items.map((item, idx) => <ItemBox item={item} key={idx} idx={idx} />)}
+        {items.map((item, idx) => (
+          <ItemBox item={item} key={idx} idx={idx} reserveItem={reserveItem} />
+        ))}
       </div>
     </div>
   );
-};
+}
 
 export default Store;

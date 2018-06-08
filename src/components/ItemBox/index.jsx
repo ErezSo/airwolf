@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const styles = {
   itemBox: {
@@ -10,23 +10,13 @@ const styles = {
   }
 };
 
-class ItemBox extends Component {
-  handleClick(e) {
-    console.log(e.target);
-  }
-  render() {
-    const { item, idx } = this.props;
-    const { itemBox } = styles;
-    return (
-      <div style={itemBox}>
-        <img
-          src={`assets/${item}`}
-          alt={`item${idx}`}
-          onClick={this.handleClick}
-        />
-      </div>
-    );
-  }
+function ItemBox({ item, idx, reserveItem }) {
+  const { itemBox } = styles;
+  return (
+    <div style={itemBox}>
+      <img src={`assets/${item}`} alt={`item${idx}`} onClick={reserveItem} />
+    </div>
+  );
 }
 
 export default ItemBox;

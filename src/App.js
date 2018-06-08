@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Header, Store } from "./components";
+import fetch from "./api/mock";
 
 const styles = {
   container: {
@@ -8,12 +9,25 @@ const styles = {
   }
 };
 class App extends Component {
+  state = {
+    cartCounter: 0
+  };
+  reserveItem = () => {
+    return fetch("https://example.com/-/v1/stock/reserve", {
+      method: "POST"
+    }).then(({ ok }) => {
+      ok &&
+        this.setState(({ cart }) => ({
+          cartCounter: cartCounter + 1
+        }));
+    });
+  };
   render() {
     const { container } = styles;
     return (
       <div style={container}>
-        <Header />
-        <Store />
+        <Header cartCounter={cartCounter} />
+        <Store reserveItem={this.reserveItem} />
       </div>
     );
   }
