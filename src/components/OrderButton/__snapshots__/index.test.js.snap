@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderButton renders correctly 1`] = `
+"<div style={[undefined]}>
+  <div style={{...}} onClick={[undefined]}>
+    <div style={{...}}>
+      Add to Cart
+    </div>
+  </div>
+</div>"
+`;

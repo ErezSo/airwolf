@@ -1,12 +1,12 @@
 import React from "react";
 import { shallow } from "enzyme";
-import App from "./App";
+import Store from "./";
 
-describe("App", () => {
+describe("Store", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<Store />);
   });
 
   it("renders", () => {

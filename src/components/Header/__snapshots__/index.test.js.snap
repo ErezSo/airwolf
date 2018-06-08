@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+"<div style={{...}}>
+  <span style={{...}} />
+  <span>
+    <img src=\\"assets/vimcar-logo.svg\\" alt=\\"logo\\" />
+  </span>
+  <span style={{...}}>
+    <Cart counter={[undefined]} />
+  </span>
+</div>"
+`;

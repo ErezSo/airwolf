@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item renders correctly 1`] = `
+"<div style={{...}}>
+  <div style={{...}} onMouseEnter={[Function]} onMouseLeave={[Function]}>
+    <OrderButton containerStyle={{...}} reserveItem={[undefined]} />
+    <ItemBox item={[undefined]} idx={[undefined]} itemOpacity={{...}} />
+  </div>
+  <div style={{...}}>
+    <div style={{...}}>
+      42mm Silver Aluminum Case with Scuba Blue Woven Nylon
+    </div>
+  </div>
+</div>"
+`;
