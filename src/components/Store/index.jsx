@@ -1,5 +1,5 @@
 import React from "react";
-import { ItemBox } from "../";
+import { Item } from "../";
 
 const items = [
   "h38ss-dtbl-sel-201603.png",
@@ -14,16 +14,14 @@ const items = [
 
 const styles = {
   container: {
-    display: "flex",
-    height: "calc(100% - 100px)",
-    justifyContent: "center",
-    alignItems: "center"
+    marginTop: 100
   },
   itemsList: {
+    maxWidth: 1030,
     display: "flex",
-    width: "52%",
     flexWrap: "wrap",
-    margin: "0 auto"
+    margin: "0 auto",
+    justifyContent: "center"
   }
 };
 
@@ -33,7 +31,7 @@ function Store({ reserveItem }) {
     <div style={container}>
       <div style={itemsList}>
         {items.map((item, idx) => (
-          <ItemBox item={item} key={idx} idx={idx} reserveItem={reserveItem} />
+          <Item item={item} key={idx} idx={idx} reserveItem={reserveItem} />
         ))}
       </div>
     </div>

@@ -14,6 +14,7 @@ class App extends Component {
   state = {
     cartCounter: 0
   };
+
   reserveItem = () => {
     return fetch("https://example.com/-/v1/stock/reserve", {
       method: "POST"
@@ -33,6 +34,7 @@ class App extends Component {
       }
     });
   };
+
   render() {
     const { cartCounter } = this.state;
     const { container } = styles;

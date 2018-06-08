@@ -3,13 +3,16 @@ import React from "react";
 const styles = {
   counterNum: {
     position: "absolute",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     width: 20,
-    height: 15,
+    height: 16,
     backgroundColor: "black",
     color: "white",
     textAlign: "center",
     fontSize: 10,
-    borderRadius: 25,
+    borderRadius: 10,
     top: 26,
     right: 24
   }
