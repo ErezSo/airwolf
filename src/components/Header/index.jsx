@@ -1,4 +1,5 @@
 import React from "react";
+import { Cart } from "../";
 
 const styles = {
   container: {
@@ -16,7 +17,7 @@ const styles = {
   }
 };
 
-export default function Header() {
+export default function Header({ cartCounter }) {
   const { container, left, cart } = styles;
   return (
     <div style={container}>
@@ -25,7 +26,7 @@ export default function Header() {
         <img src="assets/vimcar-logo.svg" alt="logo" />
       </span>
       <span style={cart}>
-        <img src="assets/cart.svg" alt="cart" />
+        <Cart counter={cartCounter} />
       </span>
     </div>
   );

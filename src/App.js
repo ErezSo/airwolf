@@ -17,12 +17,13 @@ class App extends Component {
       method: "POST"
     }).then(({ ok }) => {
       ok &&
-        this.setState(({ cart }) => ({
+        this.setState(({ cartCounter }) => ({
           cartCounter: cartCounter + 1
         }));
     });
   };
   render() {
+    const { cartCounter } = this.state;
     const { container } = styles;
     return (
       <div style={container}>
