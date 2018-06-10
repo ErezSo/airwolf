@@ -3,7 +3,7 @@
 exports[`Item renders correctly 1`] = `
 "<div style={{...}}>
   <div style={{...}} onMouseEnter={[Function]} onMouseLeave={[Function]}>
-    <OrderButton containerStyle={{...}} reserveItem={[undefined]} />
+    <OrderButton containerStyle={{...}} reserveItem={[Function: reserveItem]} />
     <ItemBox item={[undefined]} idx={[undefined]} itemOpacity={{...}} />
   </div>
   <div style={{...}}>

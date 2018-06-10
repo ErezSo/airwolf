@@ -15,10 +15,16 @@ class App extends Component {
     cartCounter: 0
   };
 
-  reserveItem = () => {
+  reserveItem = (urn, quantity) => {
     return fetch("https://example.com/-/v1/stock/reserve", {
-      method: "POST"
-    }).then(({ ok, status }) => {
+      method: "POST",
+      body: [
+        {
+          urn,
+          quantity
+        }
+      ]
+    }).then(({ ok, status, description }) => {
       ok &&
         this.setState(
           ({ cartCounter }) => ({

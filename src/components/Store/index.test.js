@@ -6,7 +6,7 @@ describe("Store", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Store />);
+    wrapper = shallow(<Store reserveItem={jest.fn()} />);
   });
 
   it("renders", () => {

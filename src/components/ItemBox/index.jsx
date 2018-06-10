@@ -12,7 +12,7 @@ const ItemBox = ({ item, idx, itemOpacity }) => {
   const { box } = styles;
   return (
     <div style={{ ...box, ...itemOpacity }}>
-      <img src={`assets/${item}`} alt={`item${idx}`} />
+      <img src={`assets/${item.img}`} alt={`item${idx}`} />
     </div>
   );
 };

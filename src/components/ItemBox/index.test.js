@@ -4,9 +4,10 @@ import ItemBox from "./";
 
 describe("ItemBox", () => {
   let wrapper;
+  const item = { id: "h38ss-dtbl", img: "h38ss-dtbl-sel-201603.png" };
 
   beforeEach(() => {
-    wrapper = shallow(<ItemBox />);
+    wrapper = shallow(<ItemBox item={item} idx={2} />);
   });
 
   it("renders", () => {

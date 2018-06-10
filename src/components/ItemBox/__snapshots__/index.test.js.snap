@@ -2,6 +2,6 @@
 
 exports[`ItemBox renders correctly 1`] = `
 "<div style={{...}}>
-  <img src=\\"assets/undefined\\" alt=\\"itemundefined\\" />
+  <img src=\\"assets/h38ss-dtbl-sel-201603.png\\" alt=\\"item2\\" />
 </div>"
 `;

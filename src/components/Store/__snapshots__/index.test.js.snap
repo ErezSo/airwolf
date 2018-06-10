@@ -3,14 +3,14 @@
 exports[`Store renders correctly 1`] = `
 "<div style={{...}}>
   <div style={{...}}>
-    <Item item=\\"h38ss-dtbl-sel-201603.png\\" idx={0} reserveItem={[undefined]} />
-    <Item item=\\"h38ss-dtgr-sel-201603.png\\" idx={1} reserveItem={[undefined]} />
-    <Item item=\\"h38ss-dtrd-sel-201603.png\\" idx={2} reserveItem={[undefined]} />
-    <Item item=\\"h42ss-stbk-sel-201603.png\\" idx={3} reserveItem={[undefined]} />
-    <Item item=\\"s42gd-nsgb-sel-201603.png\\" idx={4} reserveItem={[undefined]} />
-    <Item item=\\"s42rg-nsdb-sel-201603.png\\" idx={5} reserveItem={[undefined]} />
-    <Item item=\\"s42sg-nsbk-sel-201603.png\\" idx={6} reserveItem={[undefined]} />
-    <Item item=\\"s42si-nssb-sel-201603.png\\" idx={7} reserveItem={[undefined]} />
+    <Item item={{...}} idx={0} reserveItem={[Function: mockConstructor]} />
+    <Item item={{...}} idx={1} reserveItem={[Function: mockConstructor]} />
+    <Item item={{...}} idx={2} reserveItem={[Function: mockConstructor]} />
+    <Item item={{...}} idx={3} reserveItem={[Function: mockConstructor]} />
+    <Item item={{...}} idx={4} reserveItem={[Function: mockConstructor]} />
+    <Item item={{...}} idx={5} reserveItem={[Function: mockConstructor]} />
+    <Item item={{...}} idx={6} reserveItem={[Function: mockConstructor]} />
+    <Item item={{...}} idx={7} reserveItem={[Function: mockConstructor]} />
   </div>
 </div>"
 `;

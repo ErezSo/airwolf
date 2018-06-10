@@ -36,7 +36,9 @@ class Item extends Component {
   render() {
     const { item, idx, reserveItem } = this.props;
     const { itemWrapper, container, textWrapper, itemText } = styles;
+
     let buttonContainerStyle, itemOpacity;
+
     if (this.state.hover) {
       buttonContainerStyle = { display: "block" };
       itemOpacity = { opacity: "0.2" };
@@ -54,7 +56,7 @@ class Item extends Component {
         >
           <OrderButton
             containerStyle={buttonContainerStyle}
-            reserveItem={reserveItem}
+            reserveItem={() => reserveItem(item.id, 1)}
           />
           <ItemBox item={item} idx={idx} itemOpacity={itemOpacity} />
         </div>
