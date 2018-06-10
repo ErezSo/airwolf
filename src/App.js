@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Header, Store } from "./components";
-import fetch from "./api/mock";
 import Alert from "react-s-alert";
+import fetch from "./api/mock";
+import { Header, Store } from "./components";
 import "react-s-alert/dist/s-alert-default.css";
 
 const styles = {
@@ -10,6 +10,7 @@ const styles = {
     backgroundColor: "#fff"
   }
 };
+
 class App extends Component {
   state = {
     cartCounter: 0
